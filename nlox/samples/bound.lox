@@ -1,0 +1,21 @@
+class Person {
+  print_name() {
+    print this.name;
+  }
+}
+
+var marcin = Person();
+marcin.name = "Marcin";
+marcin.print_name();
+
+var pn = marcin.print_name;
+print pn;
+
+pn();
+
+var marvel = Person();
+marvel.name = "Marvel";
+marvel.print_name();
+
+marvel.print_name = pn;
+marvel.print_name();

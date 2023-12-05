@@ -1,0 +1,51 @@
+class Foo {
+  bar() {
+    print "Foo::bar";
+  }
+
+  hello(arg) {
+    print "Welcome, " + arg + "!";
+  }
+
+  print_this() {
+    print this;
+  }
+
+  print_field() {
+    print this.field;
+  }
+}
+
+var f = Foo();
+print f;
+
+f.field = "Mary";
+print f.field;
+print f.field + " had a little lamb";
+
+Foo().bar();
+Foo().print_this();
+
+f.print_field();
+
+var g = Foo();
+g.field = "Not Mary";
+g.print_field();
+
+class Bar {
+  init() {
+    print this;
+  }
+}
+
+var baz = Bar();
+print baz.init();
+
+class ThisIsBad {
+  init() {
+    return "can't do it";
+  }
+}
+
+var tib = ThisIsBad();
+print tib;

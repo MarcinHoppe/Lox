@@ -1,0 +1,27 @@
+fun sayHi(first, last) {
+  print "Hi, " + first + " " + last + "!";
+}
+
+var res = sayHi("Marcin", "Hoppe");
+
+print res;
+
+fun fib(n) {
+  if (n <= 1) return n;
+  return fib(n-1) + fib(n-2);
+}
+
+print fib(10);
+
+fun makeCounter() {
+  var i = 0;
+  fun count() {
+    i = i + 1;
+    print i;
+  }
+  return count;
+}
+
+var counter = makeCounter();
+counter();
+counter();

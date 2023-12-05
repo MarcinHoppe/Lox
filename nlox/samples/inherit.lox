@@ -1,0 +1,36 @@
+class Foo {
+  init() {
+    print "Foo::init";
+  }
+
+  bar(callSuper) {
+    print "Foo::bar";
+  }
+}
+
+class Baz < Foo {
+  init() {
+    super.init();
+    print "Baz::init";
+  }
+
+  bar(callSuper) {
+    if (callSuper) {
+      super.bar(callSuper);
+    } else {
+      print "Baz::bar";
+    }
+  }
+}
+
+Baz().bar(true);
+Baz().bar(false);
+
+//class Standalone {
+//  foo() {
+//    super.foo();
+//  }
+//}
+
+//Standalone().foo();
+//super.foo();
