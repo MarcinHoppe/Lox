@@ -1,0 +1,9 @@
+fun foo(s) {
+  print s;
+}
+
+fun bar() {
+  foo("hello");
+}
+
+bar();

@@ -1,0 +1,18 @@
+var beginOfLine = "/// ";
+fun main() {
+  var endOfLine = " ///";
+  fun makePrinter(prefix) {
+    fun inner(msg) {
+      print beginOfLine + prefix + msg + endOfLine;
+    }
+    return inner;
+  }
+
+  var printer = makePrinter("hello ");
+  printer("Marcin");
+
+  var logger = makePrinter("[mshoppe] ");
+  logger("diagnostic message");
+}
+
+main();
