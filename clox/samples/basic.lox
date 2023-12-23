@@ -1,0 +1,11 @@
+fun print(name) { 
+  print "welcome, " + name;
+}
+
+fun printName(name) {
+  var msg = "hello, " + name;
+  print msg;
+}
+
+printName("Marcin");
+printName("Marvel");
