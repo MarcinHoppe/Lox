@@ -1,0 +1,14 @@
+class Base {
+  foo() {
+    print "Base::foo";
+  }
+}
+
+class Derived < Base {
+  bar() {
+    super.foo();
+  }
+}
+
+var d = Derived();
+d.bar();
