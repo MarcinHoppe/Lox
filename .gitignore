@@ -1,2 +1,5 @@
 clox/clox
 clox/clox.dSYM
+tslox/node_modules
+tslox/dist
+tslox/coverage
