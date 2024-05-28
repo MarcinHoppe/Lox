@@ -1,5 +1,6 @@
 import { error } from "./error";
-import { Token, TokenType } from "./token";
+import type { TokenType } from "./token";
+import { Token } from "./token";
 
 function isDigit(c: string) {
   return /[0-9]/.test(c);

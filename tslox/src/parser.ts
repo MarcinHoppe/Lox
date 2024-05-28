@@ -1,7 +1,7 @@
 import { error } from "./error";
-import { Expr, Variable } from "./expr";
-import { Stmt, Function } from "./stmt";
-import { Token, TokenType } from "./token";
+import type { Expr, Variable } from "./expr";
+import type { Stmt, Function } from "./stmt";
+import type { Token, TokenType } from "./token";
 
 export class ParseError extends Error { }
 

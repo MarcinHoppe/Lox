@@ -1,14 +1,13 @@
-import { error } from "console";
 import Environment from "./environment";
-import { Assign, Binary, Call, Expr, Get, Logical, Set, Super, This, Unary, Variable } from "./expr";
+import type { Assign, Binary, Call, Expr, Get, Logical, Set, Super, This, Unary } from "./expr";
 import { ClockFunction } from "./nativefunctions";
 import RuntimeError from "./runtimeerror";
-import { ClassDecl, ExpressionStmt, Function, If, Print, Return, Stmt, Var, While } from "./stmt";
+import type { ClassDecl, ExpressionStmt, Function, If, Print, Return, Stmt, Var, While } from "./stmt";
 import { runtimeError } from "./error";
 import { assertNever } from "./typeutils";
-import { Token } from "./token";
+import type { Token } from "./token";
 import LoxFunction from "./loxfunction";
-import { LoxCallable, isLoxCallable } from "./loxcallable";
+import { isLoxCallable } from "./loxcallable";
 import ReturnException from "./return";
 import { LoxClass, isLoxClass } from "./loxclass";
 import { LoxInstance, isLoxInstance } from "./loxinstance";
